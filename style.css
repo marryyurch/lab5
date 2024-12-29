@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.form-container, .data-container, .table-container {
+    flex: 1;
+    max-width: 30%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 0 0 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.data-container {
+    font-weight: bold;
+}
+
+.input-field, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-field.error {
+    border-color: rgb(255, 48, 48);
+}
+
+.error-message {
+    color: rgb(255, 48, 48);
+    font-size: 12px;
+    display: none;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #418544;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.4s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+table td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+table td:hover {
+    background-color: #fff8f8;
+}

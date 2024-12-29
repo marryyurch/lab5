@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Юрченко М. О. ІК-22</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Форма для заповнення</h2>
+            <form id="dataForm">
+
+                <input type="text" id="name" class="input-field" placeholder="ПІБ" />
+                <span id="nameError" class="error-message">Формат: Прізвище І.Б.</span>
+                
+                <input type="text" id="variant" class="input-field" placeholder="Варіант"/>
+                <span id="variantError" class="error-message">Введіть варіант</span>
+                
+                <input type="text" id="group" class="input-field" placeholder="Група" />
+                <span id="groupError" class="error-message">Введіть групу (приклад: ІК-22)</span>
+
+                <input type="text" id="faculty" class="input-field" placeholder="Факультет" />
+                <span id="facultyError" class="error-message">Введіть факультет (приклад: ФІОТ)</span>
+                
+                <input type="date" id="birthDate" class="input-field" />
+                <span id="birthDateError" class="error-message">Оберіть дату</span>
+
+                <button type="button" onclick="validateForm()">Підтвердити</button>
+            </form>
+        </div>
+        <div class="data-container">
+            <h2>Введені дані</h2>
+            <p id="outputName">ПІБ:</p>
+            <p id="outputVariant">Варіант:</p>
+            <p id="outputGroup">Група:</p>
+            <p id="outputFaculty">Факультет:</p>
+            <p id="outputBirthDate">Дата народження:</p>
+        </div>
+        <div class="table-container">
+            <h2>Таблиця</h2>
+            <table id="colorTable"></table>
+            <label for="colorPicker">Оберіть колір:</label>
+            <input type="color" id="colorPicker" />
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
